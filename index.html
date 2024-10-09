@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Results Search</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Search Student Results by PRN</h1>
+    
+    <label for="prnInput">Enter PRN:</label>
+    <input type="text" id="prnInput" placeholder="Search by PRN">
+    <button onclick="searchByPRN()">Search</button>
+
+    <table id="resultsTable" style="display:none;">
+        <thead>
+            <tr>
+                <th>Branch Code</th>
+                <th>Institute Code</th>
+                <th>PRN</th>
+                <th>Student Name</th>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>CA (20)</th>
+                <th>MTE (20)</th>
+                <th>ESE (60)</th>
+                <th>Total (100)</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be injected here by JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
